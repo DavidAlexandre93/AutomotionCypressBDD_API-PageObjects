@@ -1,0 +1,28 @@
+{
+  "name": "cypress-structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome --no-exit",
+    "test:terminalElectron": "cypress-tags run -e TAGS=@testedasa",
+    "test:terminalChrome": "cypress-tags run -e TAGS=@testedasa --browser chrome",
+    "test:Cypress": "npx cypress open",
+    "test:api": "cypress run --config baseUrl=https://serverrest.dev/",
+    "test:site": "cypress run --config baseUrl=https://salomaozoppi.com.br/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.2.0",
+    "cypress-cucumber-preprocessor": "^1.12.0",
+    "mochawesome": "^6.2.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },
+  "dependencies": {
+    "joi": "^17.4.2",
+    "node-rest-server": "^2.1.0"
+  }
+}
