@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-13T14:18:26.089Z",
+    "end": "2021-09-13T14:18:37.666Z",
+    "duration": 11577,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c7caec6b-bd8a-4cae-832b-8b834266fd91",
+      "title": "",
+      "fullFile": "cypress/integration/specs/Teste.spec.js",
+      "file": "cypress/integration/specs/Teste.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9dc54ce4-c599-4aad-b90a-b8f088b1d0c1",
+          "title": "Acessar o Site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar o site Salomao Zoppi",
+              "fullTitle": "Acessar o Site Acessar o site Salomao Zoppi",
+              "timedOut": null,
+              "duration": 8816,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://salomaozoppi.com.br');\ncy.get('.exams-results').click();\ncy.get('title').contains(\"Resultados de Exames\"); //cy.get('[data-cy=name]').type('David Alexandre Fernandes');\n//cy.get('[data-cy=email]').type('david.fernandes@dasa.com.br');\n//cy.get('[data-cy=submit]').click();",
+              "err": {},
+              "uuid": "6106a613-84de-4dd4-a806-7e8da9f11f50",
+              "parentUUID": "9dc54ce4-c599-4aad-b90a-b8f088b1d0c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6106a613-84de-4dd4-a806-7e8da9f11f50"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8816,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-reportr/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

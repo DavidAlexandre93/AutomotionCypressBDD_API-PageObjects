@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-06T18:55:45.462Z",
+    "end": "2021-09-06T18:56:51.537Z",
+    "duration": 66075,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "507668fd-eac8-43fd-b558-9a9dbc46991b",
+      "title": "",
+      "fullFile": "cypress/integration/specs/Teste.spec.js",
+      "file": "cypress/integration/specs/Teste.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a9b92bf6-8b0c-40e4-aba0-28ce11e435e3",
+          "title": "Acessar o Site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar o site Salomao Zoppi",
+              "fullTitle": "Acessar o Site Acessar o site Salomao Zoppi",
+              "timedOut": null,
+              "duration": 60643,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://salomaozoppi.com.br/');\ncy.get('.exams-results').click();\ncy.get('title').contains(\"Resultados de Exames\"); //cy.get('[data-cy=name]').type('David Alexandre Fernandes');\n//cy.get('[data-cy=email]').type('david.fernandes@dasa.com.br');\n//cy.get('[data-cy=submit]').click();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `C:\\Users\\Public\\ProjetoCypress\\AutomotionCypressBDD_API-PageObjects\\cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `C:\\Users\\Public\\ProjetoCypress\\AutomotionCypressBDD_API-PageObjects\\cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:142972:13)\n    at https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:144009:16\n    at tryCatcher (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:13212:23)\n    at https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:8334:41\n    at tryCatcher (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:11325:18)\n    at _drainQueueStep (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:7919:12)\n    at _drainQueue (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:7912:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:7928:5)\n    at Async.drainQueues (https://salomaozoppi.com.br/__cypress/runner/cypress_runner.js:7798:14)\nFrom Your Spec Code:\n    at Context.eval (https://salomaozoppi.com.br/__cypress/tests?p=cypress\\integration\\specs\\Teste.spec.js:101:8)",
+                "diff": null
+              },
+              "uuid": "8ff7ecee-641c-4e9c-a835-2a23be3f0751",
+              "parentUUID": "a9b92bf6-8b0c-40e4-aba0-28ce11e435e3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8ff7ecee-641c-4e9c-a835-2a23be3f0751"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 60643,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-reportr/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
